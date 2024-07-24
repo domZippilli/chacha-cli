@@ -1,0 +1,15 @@
+# Copyright 2024 Dominic Zippilli
+# Author: github.com/domZippilli
+[package]
+name = "chacha-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["github.com/domZippilli"]
+
+[dependencies]
+anyhow = "1.0.86"
+chacha20poly1305 = { version = "0.10.1", features = ["heapless"] }
+clap = { version = "4.5.10", features = ["derive"] }
+
+[dev-dependencies]
+rand = "0.8.5"
